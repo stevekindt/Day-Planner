@@ -118,26 +118,44 @@ function storeActivities() {
 
 // This is the code for applying a class for styling for each row based on whether the hour it represents is before, after, or during the current hour
 
-var hournine = new Date("January 23, 2020 09:00:00");
-var hourten = new Date("January 23, 2020 10:00:00");
-var houreleven = new Date("January 23, 2020 11:00:00");
-var hourtwelve = new Date("January 23, 2020 12:00:00");
-var hourone = new Date("January 23, 2020 13:00:00");
-var hourtwo = new Date("January 23, 2020 14:00:00");
-var hourthree = new Date("January 23, 2020 15:00:00");
-var hourfour = new Date("January 23, 2020 16:00:00");
-var hourfive = new Date("January 23, 2020 17:00:00");
+// Assign time block hour to associated variable
 
-var ninthhour = hournine.getHours();
-var tenthhour = hourten.getHours();
-var eleventhhour = houreleven.getHours();
-var twelfthhour = hourtwelve.getHours();
-var thirteenthhour = hourone.getHours();
-var fourteenthhour = hourtwo.getHours();
-var fifteenthhour = hourthree.getHours();
-var sixteenthhour = hourfour.getHours();
-var seventeenthhour = hourfive.getHours();
+// var hournine = new Date("January 23, 2020 09:00:00");
+// var hourten = new Date("January 23, 2020 10:00:00");
+// var houreleven = new Date("January 23, 2020 11:00:00");
+// var hourtwelve = new Date("January 23, 2020 12:00:00");
+// var hourone = new Date("January 23, 2020 13:00:00");
+// var hourtwo = new Date("January 23, 2020 14:00:00");
+// var hourthree = new Date("January 23, 2020 15:00:00");
+// var hourfour = new Date("January 23, 2020 16:00:00");
+// var hourfive = new Date("January 23, 2020 17:00:00");
 
-var rightNowNumber = parseInt(rightNow);
+// Gives integer value equivalent of the hour of the time block hour
 
-console.log(rightNowNumber);
+// var ninthhour = hournine.getHours();
+// var tenthhour = hourten.getHours();
+// var eleventhhour = houreleven.getHours();
+// var twelfthhour = hourtwelve.getHours();
+// var thirteenthhour = hourone.getHours();
+// var fourteenthhour = hourtwo.getHours();
+// var fifteenthhour = hourthree.getHours();
+// var sixteenthhour = hourfour.getHours();
+// var seventeenthhour = hourfive.getHours();
+
+// Gives integer value equivalent of the hour of the day
+
+// var rightNowNumber = parseInt(rightNow);
+
+// console.log(rightNowNumber);
+
+// Loops through rows (each has a class of row) to check if, else if, else to compare assigned integer hour value for that tiem blcok hour against the integer value of the current hour of the day
+
+// $(".row").each(function(i, row){
+//     if (rightNowNumber < ninthhour) {
+//         currentRow.classList.add("future");
+//     } else if (rightNowNumber > ninthhour) {
+//         currentRow.classList.add("past");
+//     } else {
+//         currentRow.classList.add("present");
+//     }
+// });
