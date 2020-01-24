@@ -1,3 +1,5 @@
+// This is the display of the current day per moment.js moment of the current time. This iterates every second
+
 var display = document.getElementById("display-date");
 
 function updateTime() {
@@ -12,6 +14,8 @@ updateTime();
 
 var rightNow = moment().format("h");
 console.log(rightNow);
+
+// Below is the code for saving to local storage for each hour
 
 var nineOutput = document.querySelector("#nineactivity");
 var nineSubmit = document.querySelector("#ninesave");
@@ -111,3 +115,29 @@ fiveOutput.value = localStorage.getItem("fivestuff");
 function storeActivities() {
     localStorage.setItem("fivestuff", fiveOutput.value);
 }
+
+// This is the code for applying a class for styling for each row based on whether the hour it represents is before, after, or during the current hour
+
+var hournine = new Date("January 23, 2020 09:00:00");
+var hourten = new Date("January 23, 2020 10:00:00");
+var houreleven = new Date("January 23, 2020 11:00:00");
+var hourtwelve = new Date("January 23, 2020 12:00:00");
+var hourone = new Date("January 23, 2020 13:00:00");
+var hourtwo = new Date("January 23, 2020 14:00:00");
+var hourthree = new Date("January 23, 2020 15:00:00");
+var hourfour = new Date("January 23, 2020 16:00:00");
+var hourfive = new Date("January 23, 2020 17:00:00");
+
+var ninthhour = hournine.getHours();
+var tenthhour = hourten.getHours();
+var eleventhhour = houreleven.getHours();
+var twelfthhour = hourtwelve.getHours();
+var thirteenthhour = hourone.getHours();
+var fourteenthhour = hourtwo.getHours();
+var fifteenthhour = hourthree.getHours();
+var sixteenthhour = hourfour.getHours();
+var seventeenthhour = hourfive.getHours();
+
+var rightNowNumber = parseInt(rightNow);
+
+console.log(rightNowNumber);
