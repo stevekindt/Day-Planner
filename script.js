@@ -115,7 +115,6 @@ fiveOutput.value = localStorage.getItem("fivestuff");
 function storeActivities() {
     localStorage.setItem("fivestuff", fiveOutput.value);
 }
-
 // This is the code for applying a class for styling for each row based on whether the hour it represents is before, after, or during the current hour
 
 // Assign time block hour to associated variable
